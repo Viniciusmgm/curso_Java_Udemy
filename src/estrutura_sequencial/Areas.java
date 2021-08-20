@@ -2,7 +2,7 @@ package estrutura_sequencial;
 
 import java.util.Scanner;
 
-public class Exerc2 {
+public class Areas {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		double a, b, c;
