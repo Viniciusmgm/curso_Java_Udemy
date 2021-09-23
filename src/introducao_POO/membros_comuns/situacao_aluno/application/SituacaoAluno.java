@@ -1,8 +1,8 @@
-package introducao_POO.situacao_aluno.application;
+package introducao_POO.membros_comuns.situacao_aluno.application;
 
 import java.util.Locale;
 import java.util.Scanner;
-import introducao_POO.situacao_aluno.entities.Aluno;
+import introducao_POO.membros_comuns.situacao_aluno.entities.Aluno;
 
 public class SituacaoAluno {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package introducao_POO.empregado.entities;
+package introducao_POO.membros_comuns.empregado.entities;
 
 public class Empregado {
 	public String name;

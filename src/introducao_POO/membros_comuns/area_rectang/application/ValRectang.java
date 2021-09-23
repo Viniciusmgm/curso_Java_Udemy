@@ -1,8 +1,8 @@
-package introducao_POO.area_rectang.application;
+package introducao_POO.membros_comuns.area_rectang.application;
 
 import java.util.Locale;
 import java.util.Scanner;
-import introducao_POO.area_rectang.entities.Rectang;
+import introducao_POO.membros_comuns.area_rectang.entities.Rectang;
 
 public class ValRectang {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package introducao_POO.situacao_aluno.entities;
+package introducao_POO.membros_comuns.situacao_aluno.entities;
 
 public class Aluno {
 	public String nome;

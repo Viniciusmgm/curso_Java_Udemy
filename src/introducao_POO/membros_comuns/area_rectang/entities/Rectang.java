@@ -1,4 +1,4 @@
-package introducao_POO.area_rectang.entities;
+package introducao_POO.membros_comuns.area_rectang.entities;
 
 public class Rectang {
 	public double width;

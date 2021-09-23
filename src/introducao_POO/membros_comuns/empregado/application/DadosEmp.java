@@ -1,8 +1,8 @@
-package introducao_POO.empregado.application;
+package introducao_POO.membros_comuns.empregado.application;
 
 import java.util.Locale;
 import java.util.Scanner;
-import introducao_POO.empregado.entities.Empregado;
+import introducao_POO.membros_comuns.empregado.entities.Empregado;
 
 public class DadosEmp {
 	public static void main(String[] args) {
