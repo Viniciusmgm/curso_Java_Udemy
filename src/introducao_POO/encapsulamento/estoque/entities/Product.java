@@ -39,10 +39,8 @@ public class Product {
 		return price;
 	}
 	
-	public void setQuantity(int quantity) {
-		this.quantity = quantity;
-	}
-	
+	//Só o get para proteger de inconsistências
+	//Poderá mudar a quantidade apenas quando entrar ou sair produtos
 	public int getQuantity() {
 		return quantity;
 	}
