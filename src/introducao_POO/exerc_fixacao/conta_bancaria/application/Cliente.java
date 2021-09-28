@@ -8,6 +8,7 @@ public class Cliente {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
+		Conta conta;
 		
 		System.out.printf("Qual o número da conta? ");
 		int numConta = sc.nextInt();
@@ -15,25 +16,27 @@ public class Cliente {
 		String nomeTitular = sc.next();
 		
 		System.out.print("Deseja fazer um depósito inicial (s/n)? ");
-		double depositoInicial = 0;
 		if(sc.next().charAt(0) == 's') {
-			System.out.println("Qual o valor do depósito inicial? ");
-			depositoInicial = sc.nextDouble();
+			System.out.print("Qual o valor do depósito inicial? ");
+			double depositoInicial = sc.nextDouble();
+			conta = new Conta(numConta, nomeTitular, depositoInicial);
 		}
-		Conta conta = new Conta(numConta, nomeTitular, depositoInicial);
-		
+		else {
+			conta = new Conta(numConta, nomeTitular);
+		}
+			
 		System.out.println("\nDados da Conta");
-		System.out.printf("Conta %d, Titular: %s, Saldo: R$ %.2f%n", conta.getNumConta(), conta.getNomeTitular(), conta.getSaldo());
+		System.out.println(conta.toString());
 		
-		System.out.print("\nQual o valor do depósito? ");
+		System.out.print("Qual o valor do depósito? ");
 		conta.deposito(sc.nextDouble());
-		System.out.println("Conta Atualizada");
-		System.out.printf("Conta %d, Titular: %s, Saldo: R$ %.2f%n", conta.getNumConta(), conta.getNomeTitular(), conta.getSaldo());
+		System.out.println("|-----Conta Atualizada-----|");
+		System.out.println(conta.toString());
 		
-		System.out.print("\nQual o valor do saque? ");
+		System.out.print("Qual o valor do saque? ");
 		conta.saque(sc.nextDouble());
-		System.out.println("Conta Atualizada");
-		System.out.printf("Conta %d, Titular: %s, Saldo: R$ %.2f%n", conta.getNumConta(), conta.getNomeTitular(), conta.getSaldo());
+		System.out.println("|-----Conta Atualizada-----|");
+		System.out.println(conta.toString());
 		
 		sc.close();
 	}

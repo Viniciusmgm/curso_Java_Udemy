@@ -40,4 +40,7 @@ public class Conta {
 		saldo -= (saque + 5);
 	}
 	
+	public String toString() {
+		return String.format("Conta %d, Titular: %s, Saldo: R$ %.2f%n", getNumConta(), getNomeTitular(), getSaldo()); 
+	}
 }
