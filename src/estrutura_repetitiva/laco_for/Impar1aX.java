@@ -1,4 +1,4 @@
-package estrutura_repetitiva;
+package estrutura_repetitiva.laco_for;
 
 import java.util.Scanner;
 
