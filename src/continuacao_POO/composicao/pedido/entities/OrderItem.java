@@ -2,7 +2,6 @@ package continuacao_POO.composicao.pedido.entities;
 
 public class OrderItem {
 	private Integer quantity;
-	private Double price;
 	
 	private Product product;
 	
@@ -10,9 +9,8 @@ public class OrderItem {
 		
 	}
 
-	public OrderItem(Integer quantity, Double price, Product product) {
+	public OrderItem(Integer quantity, Product product) {
 		this.quantity = quantity;
-		this.price = price;
 		this.product = product;
 	}
 
@@ -24,16 +22,12 @@ public class OrderItem {
 		this.quantity = quantity;
 	}
 
-	public Double getPrice() {
-		return price;
-	}
-
 	public Product getProduct() {
 		return product;
 	}
 	
 	public Double subTotal() {
-		return price * quantity;
+		return product.getPrice() * quantity;
 	}
 	
 }
