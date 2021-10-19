@@ -1,4 +1,4 @@
-package continuacao_POO.upcasting_downcasting.conta_pessoa_empresa_juros.application;
+package continuacao_POO.sobreposicao.conta_pessoa_empresa.application;
 
 import continuacao_POO.upcasting_downcasting.conta_pessoa_empresa_juros.entities.Account;
 import continuacao_POO.upcasting_downcasting.conta_pessoa_empresa_juros.entities.BusinessAccount;
