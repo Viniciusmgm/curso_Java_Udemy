@@ -29,7 +29,7 @@ public class ImportedProduct extends Product{
 		return super.getName() 
 				+ " $ " 
 				+ totalPrice()
-				+ "(Custom fee: $ " 
+				+ " (Custom fee: $ " 
 				+ customsFee 
 				+ ")";
 	}

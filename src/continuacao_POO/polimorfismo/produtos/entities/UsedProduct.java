@@ -1,8 +1,10 @@
 package continuacao_POO.polimorfismo.produtos.entities;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class UsedProduct extends Product{
+	private final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	private Date manufatureDate;
 	
 	public UsedProduct() {
@@ -24,6 +26,11 @@ public class UsedProduct extends Product{
 	
 	@Override
 	public String priceTag() {
-		return "";
+		return getName() 
+				+ " (used) $ " 
+				+ String.format("%.2f", getPrice())
+				+ " (Manufacture date: "
+				+ sdf.format(manufatureDate)
+				+ ")";
 	}
 }
