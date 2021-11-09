@@ -49,7 +49,7 @@ public class ShapeData {
 		}
 		System.out.println("\nSHAPE AREAS:");
 		for(Shape shape : shapes) {
-			System.out.println(shape.area());
+			System.out.printf("%.2f", shape.area());
 		}
 		
 		sc.close();
